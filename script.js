@@ -53,7 +53,7 @@ document.querySelectorAll('.tab').forEach(tab => tab.addEventListener('click', (
   document.querySelectorAll('.tab').forEach(item => { item.classList.remove('is-active'); item.setAttribute('aria-selected', 'false'); });
   tab.classList.add('is-active'); tab.setAttribute('aria-selected', 'true');
   const service = services[tab.dataset.service];
-  document.querySelector('#service-panel').innerHTML = `<div class="service-number">${service.number}</div><div><h3>${service.title}</h3><p>${service.copy}</p><ul class="service-list">${service.items.map(item => `<li>${item}</li>`).join('')}</ul></div><div class="service-image placeholder-image"><span>Service image<br>placeholder</span><b>4:3</b></div>`;
+  document.querySelector('#service-panel').innerHTML = `<div class="service-number">${service.number}</div><div><h3>${service.title}</h3><p>${service.copy}</p><ul class="service-list">${service.items.map(item => `<li>${item}</li>`).join('')}</ul></div><div class="service-image placeholder-image" role="img" aria-label="Service image"></div>`;
 }));
 
 document.querySelector('#enquiry-form')?.addEventListener('submit', event => {
