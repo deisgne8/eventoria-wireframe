@@ -1515,19 +1515,11 @@ body:has(.case-hero) .work-story-grid article p{margin-top:24px!important}
 .client-carousel-toggle{display:inline-flex;align-items:center;gap:10px;flex-shrink:0;border:1px solid var(--line);border-radius:4px;background:var(--paper);color:var(--muted);padding:10px 14px;min-height:44px;font-size:12px;cursor:pointer}
 .client-carousel-toggle:hover{color:var(--ink);border-color:var(--ink)}
 .client-carousel-toggle:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
-.client-carousel-window{overflow:hidden;border-block:1px solid var(--line);background:var(--mist);padding:30px 0}
+.client-carousel-window{overflow:hidden;border-block:1px solid var(--line);background:var(--paper);padding:20px 0}
 .client-logo-track{display:flex;width:max-content;animation:client-logo-scroll 40s linear infinite}
-.client-logo-group{display:flex;flex-shrink:0;gap:32px;padding-right:32px}
-.client-wordmark{display:flex;align-items:center;justify-content:center;gap:12px;width:220px;height:108px;color:#64727d}
-.client-wordmark strong{display:block;font:600 21px/1.2 Georgia,serif;letter-spacing:.07em}
-.client-wordmark small{display:block;font:500 8px/1.5 Geist,Inter,sans-serif;letter-spacing:.24em;margin-top:6px}
-.client-symbol{display:block;width:32px;height:38px;border:2px solid currentColor;flex-shrink:0}
-.client-wordmark-arch .client-symbol{border-radius:18px 18px 0 0;border-bottom-width:6px}
-.client-wordmark-diamond .client-symbol{width:26px;height:26px;transform:rotate(45deg);border-width:3px;margin-right:4px}
-.client-wordmark-circle .client-symbol{width:34px;height:34px;border-radius:50%;border-width:7px 2px}
-.client-wordmark-bars .client-symbol{border:0;background:repeating-linear-gradient(90deg,currentColor 0,currentColor 5px,transparent 5px,transparent 10px);transform:skewY(-18deg)}
-.client-wordmark-bars strong,.client-wordmark-circle strong{font-family:Geist,Inter,sans-serif;font-weight:650;letter-spacing:-.03em}
+.client-logo-group{display:flex;flex-shrink:0;gap:22px;padding-right:22px}
+.client-logo-group img{display:block;width:220px;height:275px;object-fit:cover;border-radius:6px}
 .client-carousel:is(:hover,:focus-within) .client-logo-track,.client-carousel.is-paused .client-logo-track{animation-play-state:paused}
 @keyframes client-logo-scroll{to{transform:translateX(-50%)}}
 @media(prefers-reduced-motion:reduce){.client-logo-track{animation-play-state:paused}.client-carousel.is-playing .client-logo-track{animation-play-state:running}.client-carousel.is-playing:is(:hover,:focus-within) .client-logo-track{animation-play-state:paused}}
-@media(max-width:600px){.client-carousel-heading{align-items:flex-start;gap:12px}.client-carousel-heading h2{font-size:32px}.client-carousel-window{padding:18px 0}.client-wordmark{width:190px;height:96px}.client-logo-group{gap:20px;padding-right:20px}.client-wordmark strong{font-size:19px}}
+@media(max-width:600px){.client-carousel-heading{align-items:flex-start;gap:12px}.client-carousel-heading h2{font-size:32px}.client-carousel-window{padding:16px 0}.client-logo-group{gap:14px;padding-right:14px}.client-logo-group img{width:168px;height:210px}}

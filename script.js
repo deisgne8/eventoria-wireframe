@@ -7,7 +7,7 @@ document.querySelectorAll('.client-carousel').forEach(carousel => {
     carousel.classList.toggle('is-paused', paused);
     carousel.classList.toggle('is-playing', !paused);
     button.setAttribute('aria-pressed', String(paused));
-    button.setAttribute('aria-label', paused ? 'Play logo carousel' : 'Pause logo carousel');
+    button.setAttribute('aria-label', paused ? 'Play image carousel' : 'Pause image carousel');
     button.innerHTML = paused ? 'Play <span aria-hidden="true">▷</span>' : 'Pause <span aria-hidden="true">Ⅱ</span>';
   };
   button.addEventListener('click', () => { paused = !paused; update(); });
