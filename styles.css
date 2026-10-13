@@ -1510,6 +1510,7 @@ body:has(.case-hero) .work-story-grid article p{margin-top:24px!important}
 
 /* About: continuous sample client logo carousel. */
 .client-carousel{margin-top:32px}
+.clients .client-carousel{margin-top:0}
 .client-carousel-heading{margin-bottom:26px}
 .client-carousel-heading h2{margin:0;font:300 clamp(30px,3.5vw,44px)/1.12 Geist,Inter,sans-serif;letter-spacing:-.055em}
 .client-carousel-window{overflow:hidden;border-block:1px solid var(--line);background:var(--paper);padding:20px 0}
