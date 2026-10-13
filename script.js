@@ -1,19 +1,4 @@
 const menuButton = document.querySelector('.menu-toggle');
-document.querySelectorAll('.client-carousel').forEach(carousel => {
-  const button = carousel.querySelector('.client-carousel-toggle');
-  const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
-  let paused = motionPreference.matches;
-  const update = () => {
-    carousel.classList.toggle('is-paused', paused);
-    carousel.classList.toggle('is-playing', !paused);
-    button.setAttribute('aria-pressed', String(paused));
-    button.setAttribute('aria-label', paused ? 'Play image carousel' : 'Pause image carousel');
-    button.innerHTML = paused ? 'Play <span aria-hidden="true">▷</span>' : 'Pause <span aria-hidden="true">Ⅱ</span>';
-  };
-  button.addEventListener('click', () => { paused = !paused; update(); });
-  motionPreference.addEventListener('change', event => { paused = event.matches; update(); });
-  update();
-});
 const mobileNav = document.querySelector('.mobile-nav');
 document.querySelectorAll('.section-index').forEach(label => {
   label.textContent = label.textContent.replace(/^\s*\d+\s*\/\s*/,'');
